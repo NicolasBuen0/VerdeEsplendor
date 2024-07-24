@@ -104,3 +104,20 @@ a {
   .home{
     overflow: hidden;
   }
+
+
+  @keyframes rotateHorizontal {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(-1);
+    }
+}
+
+#animated-svg {
+    animation: rotateHorizontal 3s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
